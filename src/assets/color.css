@@ -1,0 +1,14 @@
+:root {
+    --app: rgb(255, 221, 0);
+    --main-bg: rgb(128, 130, 133);
+    --light-grey: rgb(232, 232, 232);
+    --green: rgb(30, 208, 95);
+    --red: rgb(223, 15, 15);
+    --bgColor: #0fddaf;
+    --txtColor: #ffffff;
+    --borColor: rgba(0, 0, 0, 0);
+    --textPrimary: #4b4760;
+    --textSecondary: #7f7989;
+    --borderColor: #cccccc;
+    --sizeVar: 8px;
+}

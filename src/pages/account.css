@@ -1,0 +1,116 @@
+/* account css */
+
+:root {
+    --app: rgb(255, 221, 0);
+    --main-bg: rgb(128, 130, 133);
+    --light-grey: rgb(232, 232, 232);
+    --green: rgb(30, 208, 95);
+    --red: rgb(223, 15, 15);
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #808285;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #808285;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+  }
+  *{
+      box-sizing: border-box;
+  }
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    width: 500px;
+    height: 350px;
+    margin: 0px auto;
+    align-items: center;
+    align-content: center;
+    text-align: right;
+    justify-self: center;
+  }
+  
+  .container-form{
+    display: "flex";
+    flex-direction: "column";
+  }
+  
+  .inp-account {
+    background-color: var(--light-grey);
+    border: none;
+    min-width: 380px;
+    height: 30px;
+    margin-top: 10px;
+    align-content: center;
+  }
+  
+  .inp-button {
+    background-color: var(--green);
+    border-radius: 50px;
+    border: 7px solid white;
+    border-style: double;
+    color: var(--white);
+    width: 130px;
+    height: 55px;
+    /* align-self: center; */
+    margin: 10px 30%;
+    font-size: 18px;
+    box-shadow: 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+  }
+  
+  .user-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0%;
+  }
+  
+  /* .mail-button {
+   
+    background-size: 100%;
+  } */
+  
+  a.mail {
+    background: url(../assets/image/mail.svg) no-repeat center;
+    border-radius: 50%;
+    background-size: 100%;
+    color:var(--app);
+    margin-left: 20px;
+   }
+  
+   .social{
+    max-width:60px;
+    max-height: 1px;
+    align-self: flex-end;
+    background-color: var(--white); 
+    /* margin: 0 10px;  */
+   }
+  
+   /* a{
+     text-indent: -10000px;
+   } */
+/*   
+   ul.social li{
+     /* flex: 1 1 0; */
+     /* display: flex;
+   } */
