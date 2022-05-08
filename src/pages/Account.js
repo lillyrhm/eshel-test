@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import ButtonList from '../component/Button';
-import './account.css';
+import React from 'react';
 import user from "../assets/image/user.png";
-import mail from "../assets/image/mail.svg";
+import './account.css';
 
 const Account = () => {
   return (

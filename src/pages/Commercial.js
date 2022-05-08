@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default function Commercial() {
     return <h2>commercial
-    nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h2>;
+    nnnnnnnnnnnnnnnnnnnnp[[[[iiio[oooOnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h2>;
   }
