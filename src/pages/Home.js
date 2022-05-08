@@ -1,10 +1,10 @@
-import React, { Component, useState, useEffect } from 'react';
-import "../assets/style/project.css";
-import "../assets/style/button.css";
-import ButtonList from '../component/Button';
-import logo from "../assets/image/white-contractor.svg";
-import { FiFile, FiFileText, FiBookOpen } from "react-icons/fi";
+import React, { useState } from 'react';
+import { FiBookOpen, FiFile, FiFileText } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
+import logo from "../assets/image/white-contractor.svg";
+import "../assets/style/button.css";
+import "../assets/style/project.css";
+import ButtonList from '../component/Button';
 // import { ICON_PATH } from 'constant';
 
 const HomePage = () => {

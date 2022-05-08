@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default function Calendar() {
-    return <h2>calendallllllllllllllllllllllllllllll
+             return <h2>calendallllllllllllllllllllllllllllll
     kkkkkkkkkkkkkkklllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkr</h2>;
   }

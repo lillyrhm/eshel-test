@@ -1,11 +1,11 @@
-import React, { Component, useState, useEffect } from 'react';
-import ButtonList from '../component/Button';
+import React from 'react';
 
 export default function AboutUs() {
 
   return (
     <>
-     <h1>ggggggggggghhhhhhhhhhhhhhhhhhggggg about us page</h1>
+     <h1 className='home-button'>Its the about page</h1>
+     <p>lorem spam is </p>
     </>
 
   );
