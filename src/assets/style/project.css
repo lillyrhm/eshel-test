@@ -36,6 +36,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: AIranianSans;
+  src: url(../font/AIranianSans.ttf);
+}
+
 .home {
   background-color: var(--main-bg);
   min-width: 100%;

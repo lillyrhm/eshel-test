@@ -1,0 +1,48 @@
+/* this is a final project css */
+/* 
+@import "project.css";
+@import url("../assets/style/project.css"); */
+
+.final-logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    padding: 0px;
+}
+
+.logo-img {
+    width: 40px;
+    margin: 10px auto;
+}
+
+.final-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--white);
+    width: clamp(370px, 60%, 530px);
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 0.5px solid var(--dark);
+
+}
+
+.box-img {
+    width: 20px;
+    margin: 5px 10px 0 0;
+}
+
+h5 {
+    margin: 5px;
+    padding: 0px;
+    font-family: AIranianSans, Arial;
+}
