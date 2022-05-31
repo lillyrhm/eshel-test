@@ -1,15 +1,12 @@
 import React from 'react';
 import Header from "./Header";
-// import DrawerMenu from "./drawer-menu";
+import IndexPopup from './../example/popup/index';
 
 const Layout = ({ children }) => {
     return (
         <>
-            <div className="all-page-color">
-                <Header />
-                <main>{children}</main>
-                {/* <DrawerMenu/> */}
-            </div>
+            <Header />
+            <main>{children}</main>
         </>
     )
 }

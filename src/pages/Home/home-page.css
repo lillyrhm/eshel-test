@@ -1,0 +1,30 @@
+/* *{
+    font-family: AIranianSans,Vazir;
+  } */
+
+/* home-page-button */
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    color: var(--white);
+    width: clamp(250px, 40%, 400px);
+}
+
+.home-button {
+    background-color: var(--app);
+    cursor: pointer;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 40px;
+    font-size: 16px;
+    width: clamp(250px, 80%, 400px);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from "./app/store"
+import store from "./store/store"
 import AppRouter from "./AppRouter";
 
 export default function App() {
@@ -12,3 +12,4 @@ export default function App() {
     </Provider>
   );
 } 
+ 

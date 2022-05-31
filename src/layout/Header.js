@@ -3,7 +3,7 @@ import "../assets/style/header.css";
 import back from "../assets/image/back.svg";
 import logocrop from "../assets/image/logocrop.svg";
 import menu from "../assets/image/menu.svg";
-import * as actions from "../app/actionTypes"
+import * as actions from "../store/actionTypes";
 import { useDispatch, useSelector } from 'react-redux';
 
 function Header() {

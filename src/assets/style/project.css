@@ -1,3 +1,5 @@
+@import url(../font/font.css);
+
 :root {
   --app: rgb(255, 221, 0);
   --main-bg: rgb(128, 130, 133);
@@ -9,7 +11,7 @@
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
-  --orange: #808285;
+  --orange: #ef4608;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
@@ -21,7 +23,7 @@
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
+  --warning: #ebcc6d;
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #808285;
@@ -34,25 +36,36 @@
 
 * {
   box-sizing: border-box;
+  font: AIranianSans, Amiran;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
 }
 
-@font-face {
-  font-family: AIranianSans;
-  src: url(../font/AIranianSans.ttf);
+html {
+  scroll-behavior: smooth;
 }
 
-.home {
-  background-color: var(--main-bg);
-  min-width: 100%;
-  min-height: 100%;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
 }
 
-.all-page-color {
-  background-color: var(--light-grey);
-  min-width: 100%;
-  min-height: 100vh;
-  /* display: flex;*/
-} 
+.container-all-page{
+  height: auto;
+  background-color: var(--white);
+  width: 80%;
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  margin: 0px auto;
+}
 
 .col-1 {
   width: 8.33%;
@@ -102,23 +115,28 @@
   width: 100%;
 }
 
-
-
-br {
-  padding: 500px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {background:  var(--light-grey);}
 }
 
-li, ul {
-  display: block;
-  list-style-type: none;
-  list-style-position: rtl;
-  offset-position: rtl;
-  direction: rtl;
-  background-color: var(--light-grey);
-  padding: 10px;
-  margin: 10px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {background: var(--light-grey);}
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {background:  var(--light-grey);}
+} 
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {background:  var(--light-grey);}
+} 
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {background:  var(--light-grey);}
+}
 

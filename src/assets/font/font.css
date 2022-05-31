@@ -4,7 +4,32 @@
     src: url(fonts/font.woff) format('woff');
   } */
 
-  @font-face {
-    font-family: AIranianSans;
-    src: url(./AIranianSans.ttf);
+@font-face {
+  font-family: AIranianSans;
+  src: url(./AIranianSans.ttf);
+}
+
+@font-face {
+  font-family: Vazir-Bold;
+  src: url(./Vazir-Bold.ttf);
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url(./Vazir.ttf);
+}
+
+@font-face {
+  font-family: OperatorMonoLig-Book;
+  src: url(./OperatorMonoLig-Book.ttf);
+}
+
+@font-face {
+  font-family: Amiran;
+  src: url(./Amiran.ttf);
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url(./icomoon.woff);
 }
