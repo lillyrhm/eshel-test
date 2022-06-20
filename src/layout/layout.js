@@ -5,7 +5,7 @@ import IndexPopup from './../example/popup/index';
 const Layout = ({ children }) => {
     return (
         <>
-            <Header />
+            <Header className={'header-component'}/>
             <main>{children}</main>
         </>
     )

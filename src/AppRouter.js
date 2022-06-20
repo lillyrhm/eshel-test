@@ -1,26 +1,51 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import Navbar from './component/sidebar/Sidebar';
 import Layout from "./layout/layout";
 import {
       Login,
-      Logout,
+      NumberSubmit,
+      Policy,
+      HomePage,
+      New,
+      OnGoing,
+      RouleBookBank,
       AboutUs,
       Account,
       CalendarPage,
       Commercial,
       ContactUs,
-      Event, Final,
-      HomePage,
+      Event,
+      Final,
       Introduction,
-      NotFound,
-      NumberSubmit
+      Logout,
 } from './pages/index';
-import numberSubmit from "./pages/Login/NumberSubmit.js";
+import PriveteRoute from "./utils/PriveteRoute";
+import PublicRoute from "./utils/PublicRoute";
 
 
 export default function AppRouter() {
-      
+      // const [user, setUser] = useState(null);
+
+
+
+      // const checkIsLoggedIn = () => {
+      //       const isLoggedIn = !!localStorage.getItem("token")
+      //       if (!isLoggedIn) {
+      //             // authorized(true)
+      //             console.log("go to login page")
+      //             return {
+      //                   component: <Redirect to={'/'} />
+      //             }
+      //       }
+      // }
+
+      // localStorage.setItem("token",tokenValue)
+
+      // useEffect(() => {
+      //       checkIsLoggedIn()
+      // }, [])
       const checkIsLoggedIn = () => {
             const isLoggedIn= !!localStorage.getItem("token")
             if(!isLoggedIn){
@@ -39,19 +64,25 @@ export default function AppRouter() {
                   <Layout>
                         <Navbar />
                         <Switch>
-                              <Route exact path="/login" component={Login} />
-                              <Route exact path="/number-submit" component={() => <NumberSubmit authorized={false} />} />
-                              <Route exact path="/" component={HomePage} />
-                              <Route exact path="/account" component={Account} />
-                              <Route exact path="/final" component={Final} />
-                              <Route exact path="/calendar-data" component={CalendarPage} />
-                              <Route exact path="/note" component={Event} />
-                              <Route exact path="/introduction" component={Introduction} />
-                              <Route exact path="/commercial" component={Commercial} />
-                              <Route exact path="/about-us" component={AboutUs} />
-                              <Route exact path="/contact-us" component={ContactUs} />
-                              <Route exact path="/Logout" component={Logout} />
+
+                              <PublicRoute exact path="/" component={Login} />
+                              <PublicRoute path="/number-submit" component={NumberSubmit} />
+                              <Route path="/user/policy" component={Policy} />
+                              <PriveteRoute path="/home" component={() => <HomePage authorized={false} />} />
+                              <Route path="/project/new" component={New} />
+                              <Route path="/project/on-going" component={OnGoing} />
+                              <Route path="/project/roule-book-bank" component={RouleBookBank} />
+                              <Route path="/account" component={Account} />
+                              <Route path="/final" component={Final} />
+                              <Route path="/calendar-data" component={CalendarPage} />
+                              <Route path="/note" component={Event} />
+                              <Route path="/introduction" component={Introduction} />
+                              <Route path="/commercial" component={Commercial} />
+                              <Route path="/about-us" component={AboutUs} />
+                              <Route path="/contact-us" component={ContactUs} />
+                              <Route path="/Logout" component={Logout} />
                               {/* <Route exact path="not-fond" component={Not} /> */}
+
                         </Switch>
                   </Layout>
             </BrowserRouter>

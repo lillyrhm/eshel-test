@@ -1,63 +1,76 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import user from "./../../assets/image/user.png";
+import './login.css';
 
 
-function Login() {
-const [userData,setUserData]=useState({phonNumber:""});
-const [errorMessage,setErrorMessage]=useState({value:""})
 
-const handelChange=(e)=>{
-setUserData((prevState)=>{
-    return{
-        ...prevState,
-        [e.target.name]:e.target.value,
-    };
-});
-};
+const Login = (props) => {
+  const [authorized, setAuthorized] = useState("");
+  const [error, setError] = useState(false);
+  const history = useHistory();
+  const getLocalToken = ('phoneNumber', '0123456789')
+  // const isLoggedIn = !!localStorage.setItem('phoneNumber', "0123456789");
 
-const handelSubmit=(e)=>{
-    e.preventDefault();
+  const handleRedirect = () => {
+    return history.push('./user/policy')
+  }
+  const handleClick = () => {
 
-    //if username or password field is empty, return error message
-    if (userData.phonNumber === "" ) {
-      setErrorMessage((prevState) => ({
-        value: "Empty phonNumber",
-      }));
-
-    } else if (
-      userData.phonNumber.toLowerCase() === "09369449195"
-    ) {
-      //Signin Success
-      localStorage.setItem("isAuthenticated", "true");
-      window.location.pathname = "/";
-    } else {
-      //If credentials entered is invalid
-      setErrorMessage((prevState) => ({ value: "Invalid phonNumber" }));
-      return;
+    // if (authorized==getLocalToken('phoneNumber','0123456789')){
+    if (authorized == localStorage.getItem('phoneNumber')) {
+      console.log('is authorized');
+      props.history.push('/number-submit')
+      setError(false)
     }
+    else {
 
-};
+      console.log('not working')
+      setError(true);
+    }
+  }
 
-    localStorage.setItem('number','09369449195');
-    let history = useHistory();
-    return (
-        <div className='container'>
+  return (
+    <div style={{
+      backgroundColor: 'var(--app)',
+      height: '100vh',
+      width: '100%',
+      zIndex: '100'
+    }}>
+      {error ? <h7>لطفا شماره تلفن خود را وارد کنید</h7> : null}
 
-            <label for='phoneNumber'>
-                لطفاً شماره تماس خود را وارد کنید:
-            </label>
+      <div className='all-container'>
+        <img src={user} className="user-img" />
+        {/* <img src='' */}
+        <div className='login-container' >
+
+          <form>
+
             <input
-                type='number'
-                id='phoneNumber'
-                onChange={(e)=>handelChange(e)}
-                placeholder='شماره تلفن خود را وارد کنید '
-                className='login-page'
-                required
-            />
-            {/* <button onClick={() => { history.push('/number-submit') }}>دریافت کد تایید</button> */}
-            <button onClick={handelSubmit}>دریافت کد تایید</button>
+              className='input-login'
+              value={authorized}
+              onChange={e => setAuthorized(e.target.value)}
+              type='text'
+              placeholder='شماره تلفن' src='user'
+              required />
+
+            <button
+              className='button-login'
+              type="button"
+              onClick={handleClick}
+            >
+              ارسال
+            </button>
+          </form>
+          <h7 className='text-login'> ورود به منزله موافقت با قوانین است</h7>
+          <button onClick={handleRedirect} className='a-tag'>مطالعه قوانین</button>
+
         </div>
-    )
+      </div>
+    </div >
+
+  )
 }
+
 
 export default Login;

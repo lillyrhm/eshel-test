@@ -9,12 +9,12 @@ import { RiAppsFill } from "react-icons/ri";
 const sidebarData = [
     {
         title: 'ورود به حساب کاربری  ',
-        path: '/login',
+        path: '/',
         icon: <FaHome />,
     },
     {
         title: 'خانه ',
-        path: '/',
+        path: '/home',
         icon: <FaHome />,
     },
     {

@@ -6,10 +6,10 @@ import AppRouter from "./AppRouter";
 export default function App() {
 
   return (
-    <Provider store={store}>
-      {console.log(store)}
-      <AppRouter />
-    </Provider>
+        <Provider store={store}>
+        {console.log(store)}
+        <AppRouter />
+      </Provider>
+  
   );
-} 
- 
+}

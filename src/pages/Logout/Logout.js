@@ -1,11 +1,16 @@
 import React from 'react'
 
-function Logout() {
+function Logout(props) {
+    const handleLogout = () => {
+        return (
+            props.history.push('/')
+            )
+    }
 
     return (
-        <div >
-            <h3> ابتدا وارد سایت شوید. </h3>
-        </div>
+        < >
+<button onClick={handleLogout}>خروج از حساب کاربری</button>
+        </>
     )
 }
 

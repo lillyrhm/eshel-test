@@ -1,14 +1,15 @@
 import React from "react";
 
 const ButtonList = ({ buttonList }) => {
-    return (
+       return (
         <>
             {buttonList.map((buttons) => (
                 <button key={buttons.id} className={buttons.className}
                     onClick={buttons.address} >
-                    {buttons.icon} {buttons.title} <span>{buttons.arrow}</span>
-                </button>
-            ))}
+            {buttons.icon} {buttons.title} <span>{buttons.arrow}</span>
+        </button>
+    ))
+}
         </>
     );
 }

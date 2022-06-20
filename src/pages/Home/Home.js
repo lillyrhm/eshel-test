@@ -1,39 +1,29 @@
-import React, { useState } from 'react';
-import { FiBookOpen, FiFile, FiFileText } from "react-icons/fi";
+import React from 'react';
 import { IoIosArrowBack } from "react-icons/io";
+import { useHistory } from 'react-router-dom';
+import paper from "./../../assets/image/new-projects (1).svg";
+import onGo from "./../../assets/image/on-going-projects (1).svg";
+import ruleBank from "./../../assets/image/rules-bank (2).svg";
 import logo from "./../../assets/image/white-contractor.svg";
 import "./../../assets/style/project.css";
-import ButtonList from './../../component/Button';
 import "./home-page.css";
+import OnGoing from './project/OnGoing';
 
-const HomePage = () => {
 
-  const [buttonList, setButtonList] = useState([
-    {
-      id: 1,
-      title: "پروژه های جدید",
-      address: "#",
-      className: "home-button",
-      icon: <FiFile />,
-      arrow: <IoIosArrowBack />
-    },
-    {
-      id: 2,
-      title: "پروژه های جاری",
-      address: "#",
-      className: "home-button",
-      icon: <FiFileText />,
-      arrow: <IoIosArrowBack />
-    },
-    {
-      id: 3,
-      title: "بانک قوانین و کتب",
-      address: "#",
-      className: "home-button",
-      icon: <FiBookOpen />,
-      arrow: <IoIosArrowBack />
-    }
-  ]);
+const HomePage = ({ user }) => {
+  const history = useHistory();
+
+  const handleNewProject = () => {
+    return history.push('./project/new');
+  };
+
+  const handleCurrentProject = () => {
+    return history.push('./project/on-going');
+  };
+
+  const handleBookBank = () => {
+    return history.push('./project/roule-book-bank');
+  };
 
   return (
     <div
@@ -41,14 +31,34 @@ const HomePage = () => {
         backgroundColor: '#808285',
         width: '100%',
         height: '100vh',
-        margin:'0px',
-        padding:'0px'
-      }}
-    >
+        margin: '0px',
+        padding: '0px'
+      }} >
 
       <div className="homepage-container">
+        <button className="home-button" onClick={handleNewProject}>
+          <div className='home-button-div'>
+            <img src={paper} className="img-home-button" />
+            پروژه های جدید
+          </div>
+          <IoIosArrowBack />
+        </button>
 
-        {buttonList && <ButtonList buttonList={buttonList} />}
+        <button className="home-button" onClick={handleCurrentProject}>
+          <div className='home-button-div'>
+            <img src={onGo} className="img-home-button" />
+            پروژه های جاری
+          </div>
+          <IoIosArrowBack />
+        </button>
+
+        <button className="home-button" onClick={handleBookBank}>
+          <div className='home-button-div'>
+            <img src={ruleBank} className="img-home-button" />
+            بانک قوانین و کتب
+          </div>
+          <IoIosArrowBack />
+        </button>
 
         <img src={logo} title="logo" />
 
