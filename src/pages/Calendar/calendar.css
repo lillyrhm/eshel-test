@@ -1,37 +1,29 @@
-.contain {
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    width: max(30%, 400px);
-    height: 500px;
-    background-color: aqua;
-    align-items: center;
-    align-content: center;
-}
-
 .contain-calendar {
     display: flex;
     justify-content: center;
-    width: max(100%, 400px);
-    background-color: var(--white);
-    height: 200px;
-    border-radius: 20px;
     align-items: center;
+    flex-direction: column;
+    margin: 150px auto;
+    width: 100%;
+
+    border-radius: 20px;
 }
 
 .calendar {
     border: solid 1px #777;
-    width: 100%;
+    width: 95%;
     height: 300px;
     border: 0;
-    scroll-behavior: no;
+    /* scroll-behavior: no; */
+    background-color: var(--white);
     /* align-items: center; */
     /* align-self: center; */
 }
 
 .data-box {
     background-color: var(--white);
-    width: 100%;
+    margin-top: 10px;
+    width: 95%;
     height: 100px;
 }
 
@@ -39,6 +31,6 @@
     background-color: var(--green);
     border-radius: 50px;
     border: 7px double var(--white);
-    width:100px;
+    width: 100px;
     height: 50px;
 }

@@ -1,73 +1,6 @@
 @import url(../font/font.css);
 
-:root {
-  --app: rgb(255, 221, 0);
-  --main-bg: rgb(128, 130, 133);
-  --light-grey: rgb(232, 232, 232);
-  --green: rgb(30, 208, 95);
-  --red: rgb(223, 15, 15);
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #ef4608;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ebcc6d;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #808285;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-}
-
-* {
-  box-sizing: border-box;
-  font: AIranianSans, Amiran;
-  font-size: 13px;
-  margin: 0px;
-  padding: 0px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* min-height: 100vh; */
-}
-
-.container-all-page {
-  height: auto;
-  background-color: var(--white);
-  width: 80%;
-  /* display: flex; */
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100vh;
-  margin: 0px auto;
-}
-
-.col-1 {
+/* .col-1 {
   width: 8.33%;
 }
 
@@ -113,40 +46,144 @@ main {
 
 .col-12 {
   width: 100%;
+} */
+
+:root {
+  --app: rgb(255, 221, 0);
+  --main-bg: rgb(128, 130, 133);
+  --light-grey: rgb(232, 232, 232);
+  --green: rgb(30, 208, 95);
+  --red: rgb(223, 15, 15);
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #ef4608;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ebcc6d;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #808285;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: AIranianSans, Amiran;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.text-decoration {
+  font-family: AIranianSans, Amiran;
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5rem;
+}
+
+.container-all-page {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+
+}
+
+.container-second-layer {
+  background-color: var(--white);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font: AIranianSans, Amiran, Vazir-Bold;
+}
+
+.cercle-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: Vazir, Amiran;
+  font-size: 8px;
+  background-color: var(--white);
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 80px auto 0px;
+  padding: 20px 0px;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width:425px) {
+
   .container-all-page {
     width: 100%;
-  }
-
-  .second-container {
-    width: 90%;
+    /* overflow-y: scroll; */
   }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: px) {
-  /* body {background: var(--light-grey);} */
+@media only screen and (min-width:425px) and (max-width: 620px) {
+
+  /* For mobile phones: */
+  .container-all-page {
+    width: 80%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* body {background:  var(--light-grey);} */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   /* body {background:  var(--light-grey);} */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .container-all-page {
+@media only screen and (max-width: 1200px) {
+  /* .container-all-page {
     width: 100%;
-  }
+  } */
 }
 
 @media all {

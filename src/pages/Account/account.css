@@ -9,9 +9,9 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--white);
-  width: 500px;
-  height: 350px;
-  margin: 0px auto;
+  width: clamp(300px, 98%, 600px);
+  height: 300px;
+  margin: 100px auto;
   align-items: center;
   align-content: center;
   text-align: right;
@@ -28,7 +28,7 @@
 .inp-account {
   background-color: var(--light-grey);
   border: none;
-  min-width: 380px;
+  min-width: 90%;
   height: 30px;
   margin-top: 10px;
   align-content: center;
@@ -56,15 +56,26 @@
   font-family: AIranianSans, Arial;
 }
 
-/* .mail-button {
-    background-size: 100%;
-  } */
-
-a.mail {
-  background: url(./../../assets/image/mail.svg) no-repeat center;
+.mail-button {
+  display: flex;
+  background-size: 10px;
   border-radius: 50%;
-  background-size: 100%;
-  color: var(--app);
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: var(--white);
+  margin-left: 20px;
+  /* overflow: hidden; */
+  cursor: pointer;
+}
+
+.mail {
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  /* color: var(--app); */
   margin-left: 20px;
   font-family: AIranianSans, Arial;
 }

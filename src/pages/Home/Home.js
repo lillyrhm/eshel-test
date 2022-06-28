@@ -32,37 +32,42 @@ const HomePage = ({ user }) => {
         width: '100%',
         height: '100vh',
         margin: '0px',
-        padding: '0px'
+        padding: '0px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'center',
+        // position: 'fixed'
       }} >
+      <div className='container-all-page '>
+        <div className="homepage-container">
+          <button className="home-button" onClick={handleNewProject}>
+            <div className='home-button-div'>
+              <img src={paper} className="img-home-button" />
+              پروژه های جدید
+            </div>
+            <IoIosArrowBack />
+          </button>
 
-      <div className="homepage-container">
-        <button className="home-button" onClick={handleNewProject}>
-          <div className='home-button-div'>
-            <img src={paper} className="img-home-button" />
-            پروژه های جدید
-          </div>
-          <IoIosArrowBack />
-        </button>
+          <button className="home-button" onClick={handleCurrentProject}>
+            <div className='home-button-div'>
+              <img src={onGo} className="img-home-button" />
+              پروژه های جاری
+            </div>
+            <IoIosArrowBack />
+          </button>
 
-        <button className="home-button" onClick={handleCurrentProject}>
-          <div className='home-button-div'>
-            <img src={onGo} className="img-home-button" />
-            پروژه های جاری
-          </div>
-          <IoIosArrowBack />
-        </button>
+          <button className="home-button" onClick={handleBookBank}>
+            <div className='home-button-div'>
+              <img src={ruleBank} className="img-home-button" />
+              بانک قوانین و کتب
+            </div>
+            <IoIosArrowBack />
+          </button>
 
-        <button className="home-button" onClick={handleBookBank}>
-          <div className='home-button-div'>
-            <img src={ruleBank} className="img-home-button" />
-            بانک قوانین و کتب
-          </div>
-          <IoIosArrowBack />
-        </button>
+          <img src={logo} title="logo" />
 
-        <img src={logo} title="logo" />
-
-        <h4>جامع ترین مرجع اطلاعات و قوانین نظارت ساختمان</h4>
+          <h4>جامع ترین مرجع اطلاعات و قوانین نظارت ساختمان</h4>
+        </div>
       </div>
     </div>
   );
