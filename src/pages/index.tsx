@@ -1,5 +1,5 @@
 import HomePage from './Home/Home';
-import AboutUs from './About-us/AboutUs';
+import TelegramChannel from './telegram-channel/TelegramChannel';
 import Account from './Account/Account';
 import CalendarPage from './Calendar/Calendar';
 import Commercial from './Commercial/Commercial';
@@ -15,5 +15,31 @@ import Policy from './Login/user/Policy';
 import RouleBookBank from './Home/project/RouleBookBank';
 import New from './Home/project/New';
 import OnGoing from './Home/project/OnGoing';
+import WhyEshel from './Introduction/why-eshel/WhyEshel';
+import AboutUs from './Introduction/why-eshel/AboutUs';
+import Certificates from './Introduction/why-eshel/Certificates';
 
-export { Login, Policy, Logout, NumberSubmit, HomePage, RouleBookBank, OnGoing, New, Final, AboutUs, Account, CalendarPage, Commercial, ContactUs, Introduction, Event, NotFound };
+
+
+export {
+    Login,
+    Policy,
+    Logout,
+    NumberSubmit,
+    HomePage,
+    RouleBookBank,
+    OnGoing,
+    New,
+    Final,
+    TelegramChannel,
+    Account,
+    CalendarPage,
+    Commercial,
+    ContactUs,
+    Introduction,
+    Event,
+    NotFound,
+    WhyEshel,
+    AboutUs,
+    Certificates
+};

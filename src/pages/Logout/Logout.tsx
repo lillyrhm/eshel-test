@@ -1,17 +1,17 @@
-import React from 'react'
+import * as React from 'react'
 
 function Logout(props: { history: string[] }) {
     const handleLogout = () => {
         return (
             props.history.push('/')
-            )
+        )
     }
 
     return (
-       
-<button onClick={handleLogout}>'خروج از حساب کاربری'
-</button>
-
+        <div className='container-all-page '>
+            <button onClick={handleLogout}>'خروج از حساب کاربری'
+            </button>
+        </div>
     )
 }
 

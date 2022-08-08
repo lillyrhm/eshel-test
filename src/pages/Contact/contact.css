@@ -1,0 +1,89 @@
+/* bottom of the page */
+.media {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.social-media>img {
+    border-radius: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.social-media-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    margin: 0px;
+    direction: ltr;
+    flex-direction: column;
+    padding-block: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-media-text>div {
+    display: flex;
+    padding-block: 17px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contract-img {
+    transform: rotateY(-180deg);
+    width: 180px;
+}
+
+
+/* /tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: var(--white);
+    color: var(--balck);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 90%;
+    margin-left: -60px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: 1px;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip>a {
+    color: black;
+    text-decoration: none;
+}

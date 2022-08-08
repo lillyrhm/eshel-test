@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import * as actionTypes from '../../store/actionTypes';
@@ -6,8 +6,10 @@ import "./sidebar.css";
 import sidebarData from './sidebarData';
 
 
-function Sidebar() {
-    const { isShowSidebar } = useSelector((state) => state)
+function Sidebar(){
+
+    const state = useSelector((state) => state)
+    const isShowSidebar=state.isShowSidebar
 
     return (
         <div className={isShowSidebar ? 'sidebar-container active' : 'sidebar-container'}>

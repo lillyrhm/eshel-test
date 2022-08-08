@@ -1,6 +1,5 @@
 
 import { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 
 function Timer() {
   const [count, setCount] = useState(0);

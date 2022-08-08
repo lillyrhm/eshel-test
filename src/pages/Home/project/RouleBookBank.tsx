@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import rule from '../../../assets/image/rules-bank (1).svg';
 
 const RouleBookBank = () => {

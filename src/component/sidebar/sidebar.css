@@ -14,11 +14,12 @@
 
 .active {
     right: 0px;
+    position: fixed;
 }
 
 .sidebar-item {
     display: block;
-    margin:10px 5px;
+    margin: 10px 5px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -26,5 +27,5 @@
 }
 
 .sidebar-item span {
- margin-right: 7px;
+    margin-right: 7px;
 }

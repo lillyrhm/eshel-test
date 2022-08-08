@@ -80,12 +80,14 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --clr: color;
+
+  /* --i:transform: rotate(30deg); */
 }
 
 * {
   box-sizing: border-box;
   font-family: AIranianSans, Amiran;
-  font-size: 16px;
   margin: 0px;
   padding: 0px;
 }
@@ -115,12 +117,11 @@ main {
   display: flex;
   justify-self: center;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  margin: 0 auto;
-
+  margin: 100px auto;
 }
 
 .container-second-layer {
@@ -130,6 +131,7 @@ main {
   flex-direction: column;
   overflow-x: hidden;
   font: AIranianSans, Amiran, Vazir-Bold;
+
 }
 
 .cercle-div {
@@ -139,22 +141,22 @@ main {
   align-content: center;
   text-align: center;
   font-family: Vazir, Amiran;
-  font-size: 8px;
+  font-size: 12px;
   background-color: var(--white);
   border: 1px solid var(--dark);
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin: 80px auto 0px;
-  padding: 20px 0px;
+  margin: 0px auto 10px;
+  /* padding: -4px; */
 }
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 320px) and (max-width:425px) {
+@media only screen and (min-width: 300px) and (max-width:425px) {
 
   .container-all-page {
-    width: 100%;
+    width: 99%;
     /* overflow-y: scroll; */
   }
 
@@ -165,13 +167,17 @@ main {
 
   /* For mobile phones: */
   .container-all-page {
-    width: 80%;
+    width: 90%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+
   /* body {background:  var(--light-grey);} */
+  /* .container-all-page {
+    width: 60%;
+  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -191,9 +197,9 @@ main {
     background: var(--light-grey);
   }
 
-  .text {
-    font-size: 18px;
-  }
+  /* .text {
+    font-size: 16px;
+  } */
 
   .header-component {
     width: 100%;

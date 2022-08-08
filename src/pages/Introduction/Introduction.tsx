@@ -1,37 +1,54 @@
-import React, {useState} from 'react';
-import { IoIosArrowBack } from "react-icons/io";
-import ButtonList from '../../component/Button';
+import * as React from 'react';
+import { IoIosArrowBack } from 'react-icons/io';
+import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
+// import { useState } from 'react';
+// import { IoIosArrowBack } from "react-icons/io";
+// import ButtonList from '../../component/Button';
 import './introduction.css';
 
 export default function Introduction() {
-  const [buttonList, setButtonList] = useState([
-    {
-      id: 9,
-      title: "چرا اشل",
-      address: "#",
-      className: "present-button",
-      arrow: <IoIosArrowBack />
-    },
-    {
-      id: 10,
-      title: "درباره اشل",
-      address: "#",
-      className: "present-button grad",
-      arrow: <IoIosArrowBack />
-    },
-    {
-      id: 11,
-      title: "مجوزها",
-      address: "#",
-      className: "present-button grad",
-      arrow: <IoIosArrowBack />
-    }
-  ]);
+  const history = useHistory();
+
+  const ButtonStyled = styled.button`
+  display:flex;
+  align-items: center;
+  width:95%;
+  height:50px;
+  border: 7px double var(--white);
+  border-radius:50px;
+  margin:10px;
+  background-color:var(--app);
+  cursor: pointer;
+  justify-content: space-between;
+  padding:4px;
+  `
+  const handelWayEshel = () => {
+    return history.push('/why-eshel')
+  }
+
+  const handelAboutUs = () => {
+    return history.push('/about-us')
+  }
+
+  const handelCertificates = () => {
+    return history.push('./certificates')
+  }
 
   return (
-    <div className="present-container">
-      {buttonList && <ButtonList buttonList={buttonList} />}
-
+    <div className="container-all-page present-container">
+      <ButtonStyled onClick={handelWayEshel}>
+        چرا اشل
+        <IoIosArrowBack />
+      </ButtonStyled>
+      <ButtonStyled onClick={handelAboutUs}>
+        درباره اشل
+        <IoIosArrowBack />
+      </ButtonStyled>
+      <ButtonStyled onClick={handelCertificates}>
+        مجوزها
+        <IoIosArrowBack />
+      </ButtonStyled>
     </div>
   );
 }
