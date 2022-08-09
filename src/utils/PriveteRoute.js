@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { getLocalToken } from './Common';
+// import { getLocalToken } from './Common';
 
   
   function PrivateRoute({ children, isAuthenticated, ...rest }) {

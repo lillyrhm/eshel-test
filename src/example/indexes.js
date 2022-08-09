@@ -10,11 +10,11 @@ import LoginLayoutRoute from "./LoginLayout";
 import PageUser from "./PageUser";
 import HomePage from '../pages/Home';
 import AboutUs from '../pages/About';
-import Account from '../pages/Account';
+import Account from '../pages/Profile';
 import Final from '../pages/Final';
 import Calendar from '../pages/Calendar';
-import Introduction from "../pages/Introduction";
-import Commercial from '../pages/Commercial';
+import Introduction from "../pages/Present";
+import Commercial from '../pages/OrderAds';
 import NotFound from "../pages/Not";
 import Contact from "../pages/Contact";
 

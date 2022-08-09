@@ -1,18 +1,14 @@
-
-.contain{
-    display:inline-flex;
+.contain {
+    display: inline-flex;
     align-items: center;
     align-content: center;
     /* margin: 0 auto; */
     /* padding:50%; */
 }
 
-iframe {
-    border: solid 1px #777;
-    width: 400px;
-    height: 300px;
-    border: 0;
-    scroll-behavior: no;
-    /* align-items: center; */
-    align-self: center;
+.pic-box {
+    background-color: var(--white);
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
 }

@@ -85,7 +85,6 @@
 * {
   box-sizing: border-box;
   font-family: AIranianSans, Amiran;
-  font-size: 16px;
   margin: 0px;
   padding: 0px;
 }
@@ -119,16 +118,15 @@ main {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  margin: 0 auto;
-
+  margin: 0px auto;
+  padding: 0px;
 }
 
 .container-second-layer {
   background-color: var(--white);
-  width: 90%;
+  width: 98%;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   font: AIranianSans, Amiran, Vazir-Bold;
 }
 
@@ -139,14 +137,19 @@ main {
   align-content: center;
   text-align: center;
   font-family: Vazir, Amiran;
-  font-size: 8px;
+  font-size: 14px;
   background-color: var(--white);
   border: 1px solid var(--dark);
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin: 80px auto 0px;
-  padding: 20px 0px;
+  margin: 40px auto 10px;
+  padding: 0px 0px;
+}
+
+.cercle-div>img {
+  width: 50px;
+  padding-top: 0px;
 }
 
 
@@ -155,9 +158,12 @@ main {
 
   .container-all-page {
     width: 100%;
-    /* overflow-y: scroll; */
+    padding: 0px;
   }
 
+  .container-second-layer {
+    width: 98%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -165,25 +171,32 @@ main {
 
   /* For mobile phones: */
   .container-all-page {
-    width: 80%;
+    width: 60%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  /* body {background:  var(--light-grey);} */
+
+  .container-all-page {
+    width: 50%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  /* body {background:  var(--light-grey);} */
+
+  .container-all-page {
+    width: 50%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-  /* .container-all-page {
-    width: 100%;
-  } */
+
+  .container-all-page {
+    width: 50%;
+  }
 }
 
 @media all {
@@ -191,9 +204,9 @@ main {
     background: var(--light-grey);
   }
 
-  .text {
+  /* .text {
     font-size: 18px;
-  }
+  } */
 
   .header-component {
     width: 100%;

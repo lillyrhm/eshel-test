@@ -1,0 +1,47 @@
+* {
+    font-family: AIranianSans, Arial;
+    box-sizing: border-box;
+}
+
+.boxes {
+    display: flex;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.images {
+    width: 90%;
+    height: auto;
+    justify-self: center;
+    margin: 5px 0px;
+}
+
+
+.button-comercial {
+    background-color: var(--app);
+    width: 95%;
+    height: 50px;
+    border-radius: 80px;
+    border: 5px double var(--white);
+    margin: 20px 0 20px 0;
+    box-shadow: 20px rgb(8, 6, 6);
+    /* align-self: center; */
+    margin: 0px auto 0 auto;
+    cursor: pointer;
+    padding: 10px 3px;
+    margin: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hr {
+    padding: 5px;
+    font-size:200px;
+    color: black;
+}
