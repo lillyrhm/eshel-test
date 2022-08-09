@@ -1,0 +1,38 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.red{
+  color:red;
+}
+  
+.bold{
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+
+.App.button{
+  background-color: rgb(196, 216, 18);
+}
+
+.App.App.button:hover{
+  background-color: rgb(43, 226, 211);
+}
+
+.App.button.red{
+  background-color: rgb(216, 18, 127);
+}
+.App.App.button.red:hover{
+  background-color: blueviolet;
+}
