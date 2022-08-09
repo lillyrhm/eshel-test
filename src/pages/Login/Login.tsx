@@ -17,7 +17,6 @@ const Login = (props: { history: string[]; }) => {
   padding:15px;
   width:300px;
   height:210px;
-  display: flex;
   align-items: center;
   flex-direction: column;
 `;
@@ -59,12 +58,10 @@ const Login = (props: { history: string[]; }) => {
     >
       {error ? "لطفا شماره تلفن خود را وارد کنید" : null}
 
-      <div className='all-container container-all-page '>
+      <div className='container-all-page'>
         <img src={user} alt="user image" className='user-image' />
         <StyledDiv >
-
           <form>
-
             <input
               className='input-login'
               value={authorized}

@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Sidebar from './component/sidebar/Sidebar';
-import Layout from "./layout/layout";
+import Sidebar from './sidebar/Sidebar';
+import Layout from "./Layout/Layout";
 import {
       Login,
       NumberSubmit,
@@ -12,13 +12,13 @@ import {
       OnGoing,
       RouleBookBank,
       TelegramChannel,
-      Account,
+      Profile,
       CalendarPage,
-      Commercial,
+      OrderAds,
       ContactUs,
       Event,
       Final,
-      Introduction,
+      Present,
       Logout,
       WhyEshel,
       AboutUs,
@@ -57,19 +57,19 @@ export default function AppRouter(): JSX.Element {
                               <Route path="/project/new" component={New} />
                               <Route path="/project/on-going" component={OnGoing} />
                               <Route path="/project/roule-book-bank" component={RouleBookBank} />
-                              <Route path="/profile" component={Account} />
+                              <Route path="/profile" component={Profile} />
                               <Route path="/why-eshel" component={WhyEshel} />
-                              <Route path="/about-us" component={AboutUs} />
-                              <Route path="/certificates" component={Certificates} />
+                              <Route path="about-us" component={AboutUs} />
+                              <Route path="certificates" component={Certificates} />
                               <Route path="/project/archive" component={Final} />
                               <Route path="/calendar" component={CalendarPage} />
                               <Route path="/event" component={Event} />
-                              <Route path="/present" component={Introduction} />
-                              <Route path="/order-ads" component={Commercial} />
+                              <Route path="/present" component={Present} />
+                              <Route path="/order-ads" component={OrderAds} />
                               <Route path="/telegram-channel" component={TelegramChannel} />
                               <Route path="/msg-box" component={ContactUs} />
                               <Route path="/user/login" component={Login} />
-                              {/* <Route exact path="not-fond" component={Not} /> */}
+                              {/* <Route exact path="not-fond" component=* /> */}
 
                         </Switch>
                   </Layout>

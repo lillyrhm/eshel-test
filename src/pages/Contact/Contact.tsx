@@ -7,7 +7,7 @@ import phone from './../../assets/image/img/phone.svg';
 import ensta from './../../assets/image/img/instagram.svg';
 import tellgram from './../../assets/image/img/telegram.svg';
 import whatsapp from './../../assets/image/img/whatsapp.svg';
-import mail from './../../assets/image/img/mail (1).svg';
+import mail from './../../assets/image/img/mail.svg';
 import './contact.css';
 
 export default function ContactUs() {

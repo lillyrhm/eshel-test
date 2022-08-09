@@ -1,8 +1,19 @@
 import * as React from 'react';
-import mail from './../../../assets/image/open-envelope.svg';
+import '../../../assets/style/project.css'
+import mail from './../../../assets/image/img/open-envelope.svg';
 import { TEXTS } from '../../../constant/texts';
+import styled from 'styled-components';
 
-function Policy() {
+export default function Policy() {
+
+    const StyledDiv = styled.div`
+    background-color: var(--white);
+    padding:5px;
+    width:100%;
+    height:auto;
+    align-items: center;
+    `
+
     return (
         <div
             style={{
@@ -13,17 +24,18 @@ function Policy() {
             }}
         >
             <div className='container-all-page'>
+
                 <div className='cercle-div '>
-                    <img src={mail} className='img-leter' alt='mail' /><br />
+                    <img src={mail} style={{width:"60px"}} alt='mail' />
                     <h4>قوانین اشل</h4>
                 </div>
-                <div className='container-second-layer containe-policy'>
-                    <p> {TEXTS.POLICIES}</p>
-                </div>
-            </div>
-        </div>
 
+                <StyledDiv>
+                    <p className='text-decoration'> {TEXTS.POLICIES}</p>
+                </StyledDiv>
+            </div>
+        </div >
     )
 }
 
-export default Policy;
+

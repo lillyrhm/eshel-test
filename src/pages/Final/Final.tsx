@@ -2,7 +2,8 @@ import * as React from 'react';
 import final from '../../assets/image/img/archive-done-projects.svg';
 import "./final.css";
 
-const Final = () => {
+export default function Final() {
+  
   return (
     <>
       <div className='container-all-page' >
@@ -20,5 +21,3 @@ const Final = () => {
   );
 
 }
-
-export default Final;

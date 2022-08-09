@@ -8,4 +8,4 @@ const getTodos = async (cb) => {
     // apiService.get("todos").then((data) => cb?.(data))
 }
 
-export default getTodos;
+export default getTodos

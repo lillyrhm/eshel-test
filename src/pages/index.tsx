@@ -1,10 +1,10 @@
 import HomePage from './Home/Home';
-import TelegramChannel from './telegram-channel/TelegramChannel';
-import Account from './Account/Account';
+import TelegramChannel from './TelegramChannel/TelegramChannel';
+import Profile from './Profile/Profile';
 import CalendarPage from './Calendar/Calendar';
-import Commercial from './Commercial/Commercial';
+import OrderAds from './OrderAds/OrderAds';
 import ContactUs from './Contact/Contact';
-import Introduction from './Introduction/Introduction';
+import Present from './Present/Present';
 import Event from './Event/Event';
 import Final from './Final/Final';
 import NotFound from './Not/Not';
@@ -15,9 +15,9 @@ import Policy from './Login/user/Policy';
 import RouleBookBank from './Home/project/RouleBookBank';
 import New from './Home/project/New';
 import OnGoing from './Home/project/OnGoing';
-import WhyEshel from './Introduction/why-eshel/WhyEshel';
-import AboutUs from './Introduction/why-eshel/AboutUs';
-import Certificates from './Introduction/why-eshel/Certificates';
+import WhyEshel from './Present/why-eshel/WhyEshel';
+import AboutUs from './Present/why-eshel/AboutUs';
+import Certificates from './Present/why-eshel/Certificates';
 
 
 
@@ -32,11 +32,11 @@ export {
     New,
     Final,
     TelegramChannel,
-    Account,
+    Profile,
     CalendarPage,
-    Commercial,
+    OrderAds,
     ContactUs,
-    Introduction,
+    Present,
     Event,
     NotFound,
     WhyEshel,

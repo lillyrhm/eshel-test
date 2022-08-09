@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Input } from '../../../constant/constant';
 
 type InputProps = {
     title: string;
@@ -19,7 +18,7 @@ const InputRow = (props: InputProps): JSX.Element => {
                 </text>
             </div>
             <div>
-                <Input
+                <input
                     onChange={onChange}
                     type={type || "text"}
                     name={name}

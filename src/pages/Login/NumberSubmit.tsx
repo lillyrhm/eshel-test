@@ -3,12 +3,9 @@ import { useState } from 'react';
 import '../../assets/style/project.css';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-// import user from "./../../assets/image/user.png";
 import users from './../../assets/image/img/user.png';
-import { getToken } from './user/signin';
 
-function NumberSubmit(user: { history: string[]; }) {
-
+export default function NumberSubmit(user: { history: string[]; }) {
     const [subCode, setSubCode] = useState("");
     const isLoggedIn = localStorage.setItem('token', '1234');
     const [error, setError] = useState(false);
@@ -31,9 +28,8 @@ function NumberSubmit(user: { history: string[]; }) {
     const StyledDiv = styled.div`
     background-color: var(--white);
     padding:15px;
-    width:350px;
+    width:300px;
     height:250px;
-    display: flex;
     align-items: center;
     flex-direction: column;
   `;
@@ -71,10 +67,8 @@ function NumberSubmit(user: { history: string[]; }) {
                             src='user'
                             required />
 
-                            <br/>
-
                         <input
-                         className='input-login'
+                            className='input-login'
                             type="text"
                             id='codeNumber'
                             placeholder="کد تایید"
@@ -100,9 +94,3 @@ function NumberSubmit(user: { history: string[]; }) {
     )
 
 }
-
-export default NumberSubmit;
-function setAuthorized(value: string): void {
-    throw new Error('Function not implemented.');
-}
-
