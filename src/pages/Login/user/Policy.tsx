@@ -26,7 +26,7 @@ export default function Policy() {
             <div className='container-all-page'>
 
                 <div className='cercle-div '>
-                    <img src={mail} style={{width:"60px"}} alt='mail' />
+                    <img src={mail} alt='mail' />
                     <h4>قوانین اشل</h4>
                 </div>
 

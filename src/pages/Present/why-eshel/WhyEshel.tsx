@@ -7,7 +7,7 @@ function WhyEshel() {
         <div>
             <div className='container-all-page'>
                 <div className='cercle-div '>
-                    <img src={mail} className='img-leter' alt='mail' /><br />
+                    <img src={mail} alt='mail' />
                     <h4>قوانین اشل</h4>
                 </div>
                 <div className='container-second-layer containe-policy text-decoration'>

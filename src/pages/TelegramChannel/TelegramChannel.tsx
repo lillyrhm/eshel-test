@@ -28,7 +28,7 @@ export default function TelegramChannel(): JSX.Element {
       <div className='container-all-page' >
 
         <div className='cercle-div'>
-          <br /><br />
+          <br />
           <h4>کانال های تلگرام استان ها </h4>
         </div>
 

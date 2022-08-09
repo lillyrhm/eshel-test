@@ -124,7 +124,7 @@ main {
 
 .container-second-layer {
   background-color: var(--white);
-  width:98%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   font: AIranianSans, Amiran, Vazir-Bold;
@@ -148,7 +148,8 @@ main {
 }
 
 .cercle-div>img {
-  width: 20px;
+  width: 50px;
+  padding-top: 0px;
 }
 
 
@@ -157,6 +158,11 @@ main {
 
   .container-all-page {
     width: 100%;
+    padding: 0px;
+  }
+
+  .container-second-layer {
+    width: 98%;
   }
 }
 
@@ -165,7 +171,7 @@ main {
 
   /* For mobile phones: */
   .container-all-page {
-    width: 70%;
+    width: 60%;
   }
 }
 

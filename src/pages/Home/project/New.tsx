@@ -17,10 +17,8 @@ const New = (): JSX.Element => {
 
     return (
         <div className='container-all-page'>
-
-            {/*  */}
             <div className='cercle-div'>
-                <img src={newProject} className='logo-img' />
+                <img src={newProject} />
                 <h5>پروژه جدید</h5>
             </div>
 

@@ -52,8 +52,8 @@ const Login = (props: { history: string[]; }) => {
       style={{
         backgroundColor: 'var(--app)',
         height: "100vh",
-        width: " 100%",
-        zIndex: 100,
+        width: "100%",
+        zIndex: 100
       }}
     >
       {error ? "لطفا شماره تلفن خود را وارد کنید" : null}

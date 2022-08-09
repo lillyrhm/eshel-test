@@ -59,14 +59,14 @@ export default function AppRouter(): JSX.Element {
                               <Route path="/project/roule-book-bank" component={RouleBookBank} />
                               <Route path="/profile" component={Profile} />
                               <Route path="/why-eshel" component={WhyEshel} />
-                              <Route path="about-us" component={AboutUs} />
-                              <Route path="certificates" component={Certificates} />
+                              <Route path="/about-us" component={AboutUs} />
+                              <Route path="/certificates" component={Certificates} />
                               <Route path="/project/archive" component={Final} />
                               <Route path="/calendar" component={CalendarPage} />
-                              <Route path="/event" component={Event} />
+                              <Route path="/events" component={Event} />
                               <Route path="/present" component={Present} />
                               <Route path="/order-ads" component={OrderAds} />
-                              <Route path="/telegram-channel" component={TelegramChannel} />
+                              <Route path="/telegram-channels" component={TelegramChannel} />
                               <Route path="/msg-box" component={ContactUs} />
                               <Route path="/user/login" component={Login} />
                               {/* <Route exact path="not-fond" component=* /> */}
