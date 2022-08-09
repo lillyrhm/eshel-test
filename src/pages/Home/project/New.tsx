@@ -1,4 +1,5 @@
-import React, { memo, useState } from 'react';
+import * as React from 'react';
+import { memo, useState } from 'react';
 import newProject from '../../../assets/image/new-projects (1).svg';
 import dataProject from '../../../assets/image/project-details (1).svg';
 import owner from '../../../assets/image/owner-details.svg';
